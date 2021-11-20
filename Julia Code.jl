@@ -2,6 +2,20 @@
 using JuMP
 using Gurobi
 bar=Model(solver = GurobiSolver())
+  
+s = s
+N = N
+M = M
+W = W
+T = T
+K = K
+d = d
+b1 = b1
+b2 = b2
+BY = BY
+l = l
+q = q
+
 
 @variable(bar,x[1:N, 1:M, 1:K, 1:T],Bin)
 @variable(bar,a[1:W, 1:M, 1:T],Bin)
